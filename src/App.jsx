@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
 
 export default function App() {
   const [page, setPage] = useState("home");
@@ -47,6 +48,7 @@ export default function App() {
       <main className="pt-24 pb-16">
         {page === "home" && <Home setPage={setPage} />}
         {page === "projects" && <Projects />}
+        {page === "contact" && <Contact />}
       </main>
     </div>
   );

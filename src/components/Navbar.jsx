@@ -13,17 +13,14 @@ export default function Navbar({ setPage, theme, setTheme }) {
 
         <div className="flex items-center gap-6 text-sm font-medium text-neutral-800 dark:text-neutral-200">
           <button onClick={() => setPage("home")} className="hover:text-cyan-500 transition-colors">
-            ABOUT
+            HOME
           </button>
           <button onClick={() => setPage("projects")} className="hover:text-cyan-500 transition-colors">
             PROJECTS
           </button>
-          <a
-            href="mailto:floresfernando2005@gmail.com"
-            className="hover:text-cyan-500 transition-colors"
-          >
+          <button onClick={() => setPage("contact")} className="hover:text-cyan-500 transition-colors">
             CONTACT
-          </a>
+          </button>
 
           <ThemeToggle theme={theme} setTheme={setTheme} />
         </div>

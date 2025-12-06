@@ -4,7 +4,7 @@ export default function ThemeToggle({ theme, setTheme }) {
   return (
     <button
       onClick={() => setTheme(nextTheme)}
-      className="flex items-center gap-2 rounded-full border border-neutral-300 dark:border-neutral-700 px-3 py-1.5 text-xs font-semibold hover:border-cyan-400 hover:text-cyan-500 dark:hover:border-cyan-400 transition-colors"
+      className="flex items-center gap-2 rounded-full border border-neutral-200 bg-white/80 px-3 py-1.5 text-xs font-semibold text-neutral-800 shadow-sm hover:border-cyan-400 hover:text-cyan-600 transition-colors dark:border-neutral-700 dark:bg-neutral-900/70 dark:text-neutral-100"
       aria-label="Toggle color theme"
       type="button"
     >

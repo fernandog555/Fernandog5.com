@@ -21,13 +21,16 @@ export default function Home({ setPage }) {
           into clean, performant code.
         </p>
 
-        <div className="max-w-3xl text-neutral-700 dark:text-neutral-200 text-sm leading-relaxed bg-white/70 dark:bg-neutral-900/60 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-5 shadow-sm">
+        <div className="relative overflow-hidden max-w-3xl text-neutral-700 dark:text-neutral-200 text-sm leading-relaxed bg-white/70 dark:bg-neutral-900/70 border border-neutral-200 dark:border-neutral-800 rounded-2xl p-5 shadow-sm">
+          <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-200/35 via-white/20 to-purple-200/35 dark:from-cyan-500/12 dark:via-transparent dark:to-purple-500/15" />
+          <div className="relative">
           <p className="font-semibold text-neutral-900 dark:text-white mb-2">Career Summary</p>
           <p>
             Junior Software Engineering student with systems-engineering background focused on backend development,
             process optimization, and data-driven solutions. Experienced delivering user-focused tools, implementing
             efficient algorithms, and applying Agile practices.
           </p>
+          </div>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-3 text-xs font-semibold text-cyan-700 dark:text-cyan-200">
@@ -42,8 +45,10 @@ export default function Home({ setPage }) {
           </span>
         </div>
 
-        <div className="grid gap-4 md:grid-cols-2 w-full max-w-4xl">
-          <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/60 p-5 text-left shadow-sm">
+        <div className="grid gap-4 md:grid-cols-2 w-full max-w-4xl mx-auto">
+          <div className="relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/70 p-5 text-left shadow-sm">
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-200/35 via-white/20 to-purple-200/35 dark:from-cyan-500/12 dark:via-transparent dark:to-purple-500/15" />
+            <div className="relative">
             <p className="text-xs font-semibold tracking-[0.2em] text-cyan-600 dark:text-cyan-300 mb-2">
               EDUCATION
             </p>
@@ -54,9 +59,12 @@ export default function Home({ setPage }) {
             <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-300">
               Relevant: Data Structures & Algos, OS, Database Systems, Systems Programming (UNIX), Probability & Stats.
             </p>
+            </div>
           </div>
 
-          <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/60 p-5 text-left shadow-sm">
+          <div className="relative overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/70 p-5 text-left shadow-sm">
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-200/35 via-white/20 to-purple-200/35 dark:from-cyan-500/12 dark:via-transparent dark:to-purple-500/15" />
+            <div className="relative">
             <p className="text-xs font-semibold tracking-[0.2em] text-cyan-600 dark:text-cyan-300 mb-2">
               SKILLS
             </p>
@@ -67,60 +75,32 @@ export default function Home({ setPage }) {
               <li><span className="font-semibold text-neutral-900 dark:text-white">Tools:</span> Git/GitHub, Docker, Linux/Unix, Bash, Agile/Scrum</li>
               <li><span className="font-semibold text-neutral-900 dark:text-white">Other:</span> Sprint planning, tech writing, English/Spanish (fluent)</li>
             </ul>
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="w-full max-w-4xl mx-auto">
+          <div className="my-3 h-[2px] bg-gradient-to-r from-cyan-200 via-cyan-400 to-cyan-200 dark:from-cyan-500/50 dark:via-cyan-400 dark:to-cyan-500/50 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.35)]" />
+        </div>
+
+        <div className="flex flex-wrap justify-center gap-4 max-w-sm mx-auto">
           <button
             onClick={() => setPage("projects")}
-            className="px-6 py-3 rounded-lg border border-cyan-500 bg-white/90 text-cyan-800 font-semibold shadow-sm hover:-translate-y-0.5 hover:shadow transition-transform dark:border-cyan-400 dark:bg-cyan-500/10 dark:text-cyan-200"
+            className="px-6 py-3 rounded-lg border border-neutral-300 bg-neutral-100 text-neutral-800 font-semibold shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow hover:bg-[#e6f5ff] hover:text-cyan-700 hover:border-cyan-300 dark:border-neutral-700 dark:bg-neutral-800/80 dark:text-neutral-100 dark:hover:bg-[#0f1b38] dark:hover:text-cyan-100 dark:hover:border-cyan-400"
           >
-            VIEW MY WORK
+            PROJECTS
           </button>
 
-          <a
-            href="/Resume.pdf"
-            download
-            className="px-6 py-3 rounded-lg border border-neutral-300 bg-white/90 text-neutral-800 font-semibold shadow-sm hover:-translate-y-0.5 hover:shadow transition-transform dark:border-neutral-700 dark:bg-neutral-900/60 dark:text-neutral-100"
+          <button
+            onClick={() => setPage("contact")}
+            className="px-6 py-3 rounded-lg border border-neutral-300 bg-neutral-100 text-neutral-800 font-semibold shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow hover:bg-[#e6f5ff] hover:text-cyan-700 hover:border-cyan-300 dark:border-neutral-700 dark:bg-neutral-800/80 dark:text-neutral-100 dark:hover:bg-[#0f1b38] dark:hover:text-cyan-100 dark:hover:border-cyan-400"
+            type="button"
           >
-            DOWNLOAD RESUME
-          </a>
-
-          <a
-            href="mailto:floresfernando2005@gmail.com"
-            className="px-6 py-3 rounded-lg border border-neutral-300 bg-white/90 text-neutral-800 font-semibold shadow-sm hover:-translate-y-0.5 hover:shadow transition-transform dark:border-neutral-700 dark:bg-neutral-900/60 dark:text-neutral-100"
-          >
-            EMAIL ME
-          </a>
+            CONTACT ME
+          </button>
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-10 text-sm text-neutral-600 dark:text-neutral-300">
-        <a
-          href="https://github.com/fernandog555"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-cyan-500 transition-colors"
-        >
-          GitHub
-        </a>
-        <a
-          href="https://linkedin.com/in/fernandoflores5"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-cyan-500 transition-colors"
-        >
-          LinkedIn
-        </a>
-        <a
-          href="https://instagram.com/big._.fern"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-cyan-500 transition-colors"
-        >
-          Instagram
-        </a>
-      </div>
     </section>
   );
 }

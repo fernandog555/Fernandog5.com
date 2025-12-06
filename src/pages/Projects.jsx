@@ -34,9 +34,10 @@ export default function Projects() {
         {projects.map((project) => (
           <article
             key={project.title}
-            className="p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/60 shadow-sm hover:shadow-md transition-shadow"
+            className="relative overflow-hidden p-6 rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/70 shadow-sm hover:shadow-md transition-shadow"
           >
-            <div className="flex flex-col gap-2">
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-cyan-200/30 via-white/20 to-purple-200/30 dark:from-cyan-500/12 dark:via-transparent dark:to-purple-500/15" />
+            <div className="relative flex flex-col gap-2">
               <h3 className="text-2xl font-semibold text-neutral-900 dark:text-white">{project.title}</h3>
               <p className="text-neutral-600 dark:text-neutral-300">{project.description}</p>
               <div className="flex flex-wrap gap-2 text-xs font-semibold text-cyan-700 dark:text-cyan-200">
@@ -54,7 +55,7 @@ export default function Projects() {
                   href={project.live}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-cyan-500 font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-neutral-200 bg-white/80 text-cyan-600 font-semibold shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow hover:bg-[#e6f5ff] hover:text-cyan-700 hover:border-cyan-300 dark:border-neutral-800 dark:bg-neutral-800/70 dark:text-cyan-200 dark:hover:bg-[#0f1b38] dark:hover:text-cyan-100 dark:hover:border-cyan-400"
                 >
                   View Live ↗
                 </a>
@@ -62,7 +63,7 @@ export default function Projects() {
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="text-cyan-500 font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-lg border border-neutral-200 bg-white/80 text-cyan-600 font-semibold shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow hover:bg-[#e6f5ff] hover:text-cyan-700 hover:border-cyan-300 dark:border-neutral-800 dark:bg-neutral-800/70 dark:text-cyan-200 dark:hover:bg-[#0f1b38] dark:hover:text-cyan-100 dark:hover:border-cyan-400"
                 >
                   View on GitHub →
                 </a>
