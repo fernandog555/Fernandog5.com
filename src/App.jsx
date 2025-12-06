@@ -50,6 +50,10 @@ export default function App() {
         {page === "projects" && <Projects />}
         {page === "contact" && <Contact />}
       </main>
+
+      <footer className="pb-6 text-center text-xs text-neutral-600 dark:text-neutral-400">
+        © Fernando Flores 2025
+      </footer>
     </div>
   );
 }
