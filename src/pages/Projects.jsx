@@ -7,6 +7,14 @@ const projects = [
     link: "https://github.com/fernandog555/UTD_StudySpots",
     live: "https://utd-studyspots-1.onrender.com/",
   },
+  {
+    title: "Portfolio Site",
+    description:
+      "Personal portfolio built with React, Vite, and Tailwind featuring theme toggle, gradients, and project highlights.",
+    tech: ["React", "Vite", "Tailwind"],
+    link: "https://github.com/fernandog555/Fernandog5.com",
+    live: "https://fernandog5-portfolio.vercel.app/",
+  },
 ];
 
 export default function Projects() {
