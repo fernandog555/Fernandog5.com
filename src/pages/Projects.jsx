@@ -3,7 +3,7 @@ const projects = [
     title: "Study Spots @ UTD",
     description:
       "FastAPI + PostgreSQL web app that helps UTD students discover, review, and save study locations with category filters, auth, and a custom REST API.",
-    tech: ["FastAPI", "PostgreSQL", "React", "Tailwind"],
+    tech: ["FastAPI", "PostgreSQL", "React", "Tailwind", "Python"],
     link: "https://github.com/fernandog555/UTD_StudySpots",
     live: "https://utd-studyspots-1.onrender.com/",
   },
