@@ -21,7 +21,7 @@ const projects = [
       "Personal portfolio built with React, Vite, and Tailwind featuring theme toggle, gradients, and project highlights.",
     tech: ["React", "Vite", "Tailwind"],
     link: "https://github.com/fernandog555/Fernandog5.com",
-    live: "https://fernandog5-portfolio.vercel.app/",
+    live: "https://www.fernandog5.com/",
   },
 ];
 
