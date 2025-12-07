@@ -80,7 +80,7 @@ export default function Home({ setPage }) {
         </div>
 
         <div className="w-full max-w-4xl mx-auto">
-          <div className="my-3 h-[2px] bg-gradient-to-r from-cyan-200 via-cyan-400 to-cyan-200 dark:from-cyan-500/50 dark:via-cyan-400 dark:to-cyan-500/50 rounded-full shadow-[0_0_12px_rgba(59,130,246,0.35)]" />
+          <div className="my-3 h-[2px] bg-gradient-to-r from-transparent via-cyan-400/90 to-transparent dark:from-transparent dark:via-cyan-300/80 dark:to-transparent rounded-full shadow-[0_0_12px_rgba(59,130,246,0.35)]" />
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 max-w-sm mx-auto">

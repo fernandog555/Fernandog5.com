@@ -1,4 +1,4 @@
-export default function Contact() {
+export default function Contact({ setPage }) {
   return (
     <section className="max-w-5xl mx-auto px-6">
       <div className="text-center mb-10 space-y-3">
@@ -27,6 +27,27 @@ export default function Contact() {
             { href: "https://instagram.com/big._.fern", label: "Instagram", Icon: InstagramIcon },
           ]}
         />
+      </div>
+
+      <div className="w-full max-w-4xl mx-auto">
+        <div className="my-6 h-[2px] bg-gradient-to-r from-transparent via-cyan-400/90 to-transparent dark:from-transparent dark:via-cyan-300/80 dark:to-transparent rounded-full shadow-[0_0_12px_rgba(59,130,246,0.35)]" />
+      </div>
+
+      <div className="mt-6 flex flex-wrap justify-center gap-4 max-w-sm mx-auto">
+        <button
+          onClick={() => setPage("home")}
+          className="px-6 py-3 rounded-lg border border-neutral-300 bg-neutral-100 text-neutral-800 font-semibold shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow hover:bg-[#e6f5ff] hover:text-cyan-700 hover:border-cyan-300 dark:border-neutral-700 dark:bg-neutral-800/80 dark:text-neutral-100 dark:hover:bg-[#0f1b38] dark:hover:text-cyan-100 dark:hover:border-cyan-400"
+        >
+          HOME
+        </button>
+
+        <button
+          onClick={() => setPage("projects")}
+          className="px-6 py-3 rounded-lg border border-neutral-300 bg-neutral-100 text-neutral-800 font-semibold shadow-sm transition-transform hover:-translate-y-0.5 hover:shadow hover:bg-[#e6f5ff] hover:text-cyan-700 hover:border-cyan-300 dark:border-neutral-700 dark:bg-neutral-800/80 dark:text-neutral-100 dark:hover:bg-[#0f1b38] dark:hover:text-cyan-100 dark:hover:border-cyan-400"
+          type="button"
+        >
+          PROJECTS
+        </button>
       </div>
     </section>
   );

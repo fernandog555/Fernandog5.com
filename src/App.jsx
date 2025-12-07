@@ -47,8 +47,8 @@ export default function App() {
 
       <main className="pt-24 pb-16">
         {page === "home" && <Home setPage={setPage} />}
-        {page === "projects" && <Projects />}
-        {page === "contact" && <Contact />}
+        {page === "projects" && <Projects setPage={setPage} />}
+        {page === "contact" && <Contact setPage={setPage} />}
       </main>
 
       <footer className="pb-6 text-center text-xs text-neutral-600 dark:text-neutral-400">
